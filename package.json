@@ -4,7 +4,8 @@
   "description": "Learning full stack",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+	"start": "nodemon --exec babel-node server.js --ignore public/",
+	"dev": "webpack -wd"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,23 @@
   "bugs": {
     "url": "https://github.com/ganhari123/fullstack/issues"
   },
-  "homepage": "https://github.com/ganhari123/fullstack#readme"
+  "homepage": "https://github.com/ganhari123/fullstack#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "mongodb": "^2.2.31",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^4.6.1",
+    "eslint-plugin-react": "^7.3.0",
+    "nodemon": "^1.12.0",
+    "webpack": "^3.5.6"
+  }
 }
