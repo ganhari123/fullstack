@@ -3,7 +3,7 @@
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: __dirname + '/public',
+    path: __dirname + '/public/react',
     filename: 'bundle.js'
   },
   module: {
@@ -11,6 +11,10 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader'
+      },
+      {
+        test: /\.json$/,
+        loader: 'json-loader'
       }
     ]
   }

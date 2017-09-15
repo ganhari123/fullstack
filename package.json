@@ -4,8 +4,8 @@
   "description": "Learning full stack",
   "main": "index.js",
   "scripts": {
-	"start": "nodemon --exec babel-node server.js --ignore public/",
-	"dev": "webpack -wd"
+    "start": "nodemon --exec babel-node server.js --ignore public/",
+    "dev": "webpack -wd"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/ganhari123/fullstack#readme",
   "dependencies": {
+    "axios": "^0.16.2",
+    "ejs": "^2.5.7",
     "express": "^4.15.4",
+    "json-loader": "^0.5.7",
     "mongodb": "^2.2.31",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
